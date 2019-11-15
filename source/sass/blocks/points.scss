@@ -1,0 +1,44 @@
+.points {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 7%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: .875em;
+  font-weight: 400;
+  color: $white;
+  text-align: left;
+  list-style: none;
+}
+
+.points__point {
+  padding-bottom: 3%;
+  display: flex;
+  vertical-align: middle;
+}
+
+.points__icon {
+  margin-right: 2%;
+  width: 15px;
+  height: 15px;
+  fill: $white;
+}
+
+.points--black {
+  color: $black;
+}
+
+.points--black .points__icon {
+  fill: $black;
+}
+
+@media (min-width: $tablet-width-min) {
+  .points__text {
+    padding-top: 4%;
+  }
+}
+
+@media (min-width: $desktop-width-min) {
+  .points {
+    padding-bottom: 8%;
+  }
+}

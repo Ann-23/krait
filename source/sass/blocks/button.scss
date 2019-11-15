@@ -1,0 +1,66 @@
+.button {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: .7em;
+  font-weight: 500;
+  color: $black;
+  background-color: $white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button--prev,
+.button--next {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $gray-1;
+  border-radius: 50%;
+}
+
+.button--next {
+  width: 34px;
+  height: 34px;
+}
+
+.button--active {
+  background: linear-gradient(to right, $orange, $fucsiya);
+  border: 3px solid $gray-1;
+}
+
+.button__icon {
+  position: relative;
+}
+
+.button__icon-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+}
+
+@media (min-width: $tablet-width-min) {
+  .button--prev,
+  .button--next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button--next {
+    width: 43px;
+    height: 43px;
+  }
+
+  .button__icon-item {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: .875em;
+  }
+}

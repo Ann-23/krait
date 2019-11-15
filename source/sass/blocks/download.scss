@@ -1,0 +1,92 @@
+.download {
+  padding: 5% 0;
+  background: linear-gradient(to right, $orange, $fucsiya);
+}
+
+.download__title {
+  padding-bottom: 3%;
+  font-size: 2.25em;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+}
+
+.download__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.download__card {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: $white;
+}
+
+.download__icon {
+  padding: 10% 0;
+  padding-bottom: 7%;
+  width: 31.94%;
+  align-self: stretch;
+  background-color: $gray;
+  text-align: center;
+}
+
+.download__card:nth-of-type(2) .download__icon {
+  background-image: url("../img/icon-android.svg");
+  background-repeat: no-repeat;
+  background-size: 43px 50px;
+  background-position: center;
+}
+
+.download__card:nth-of-type(3) .download__icon {
+  background-image: url("../img/icon-windows.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+
+.download__info {
+  padding: 10% 2%;
+  padding-bottom: 7%;
+  padding-left: 5%;
+}
+
+.download__top-title {
+  padding-bottom: 5%;
+  margin: 0;
+  font-size: 1.67em;
+  font-weight: 600;
+  color: $black;
+}
+
+.download__text {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 0.875em;
+  font-weight: 100;
+  color: $gray-dark;
+}
+
+@media (min-width: $tablet-width-min) {
+  .download__cards {
+    justify-content: space-around;
+  }
+
+  .download__card {
+    width: 48%;
+  }
+}
+
+@media (min-width: $desktop-width-min) {
+  .download__cards {
+    justify-content: space-between;
+  }
+
+  .download__card {
+    width: 31.58%;
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  padding: 5% 0;
+  background: $black-1;
+}
+
+.footer__social {
+  margin: 0 auto;
+  margin-bottom: 3%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  list-style: none;
+}
+
+.footer__text {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 0.875em;
+  font-weight: 100;
+  text-align: center;
+  color: $white;
+}
+
+@media (min-width: $tablet-width-min) {
+  .footer__social {
+    width: 20%;
+  }
+}
+
+@media (min-width: $desktop-width-min) {
+  .footer__social {
+    width: 15%;
+  }
+}

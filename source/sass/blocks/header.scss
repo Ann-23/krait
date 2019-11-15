@@ -1,0 +1,190 @@
+.header {
+  padding: 7.6% 0;
+  background: linear-gradient(to right, $orange, $fucsiya);
+}
+
+.header__top-elements {
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  padding-bottom: 4%;
+  display: flex;
+}
+
+.header__logo-text {
+  padding-top: 2.5%;
+  display: inline-block;
+  font-size: 2.25em;
+  font-weight: 700;
+  color: $white;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.header__list-item {
+  text-align: center;
+}
+
+.header__list-link {
+  display: block;
+  margin: 0;
+  padding: 10% 1%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: .875em;
+  font-weight: 400;
+  color: $white;
+  text-decoration: none;
+}
+
+.header__list-button {
+  padding: 5% 9%;
+}
+
+.header__banner {
+  text-align: center;
+}
+
+.header__title {
+  margin: 0;
+  padding-bottom: 7%;
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: $white;
+}
+
+.header__text {
+  margin: 0;
+  padding-bottom: 5%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: .875em;
+  font-weight: 100;
+  color: $white;
+}
+
+.header__points-button {
+  padding: 2.5%;
+}
+
+.header__img {
+  display: none;
+}
+
+@media (min-width: $tablet-width-min) {
+  .header {
+    padding-top: 5%;
+  }
+
+  .header__top-elements {
+    padding-bottom: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    padding-bottom: 0;
+  }
+
+  .header__nav {
+    width: 55%;
+  }
+
+  .header__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__list-link {
+    margin-right: 3%;
+  }
+
+  .header__list-button {
+    min-width: 115px;
+  }
+
+  .header__points-button {
+    padding: 1% 6%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__banner {
+    width: 55%;
+    text-align: left;
+  }
+
+  .header__intro {
+    padding-bottom: 11.4%;
+    background-image: url("../img/iPhones@tab.png");
+    background-repeat: no-repeat;
+    background-size: 386px 251px;
+    background-position: right 100%;
+  }
+
+  .header__list-button {
+    padding: 6.5% 9%;
+    min-width: 153px;
+  }
+
+  .header__points-button {
+    padding: 3% 10%;
+  }
+}
+
+@media (min-width: $desktop-width-min) {
+  .header {
+    padding-bottom: 0;
+  }
+
+  .header__nav {
+    width: 40.09%;
+  }
+
+  .header__banner {
+    width: 42.81%;
+  }
+
+  .header__title {
+    font-size: 3.375em;
+  }
+
+  .header__title,
+  .header__text {
+    padding-bottom: 5%;
+  }
+
+  .header__intro {
+    background-image: url("../img/iPhones-small.png");
+    background-size: 570px 457px;
+    background-position: right 88%;
+  }
+}
+
+@media (min-width: $desktop-width-mid) {
+  .header__intro {
+    background-image: url("../img/iPhones.png");
+    background-size: 771px 502px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__intro {
+    background-image: url("../img/iPhones.png");
+    background-size: 964px 628px;
+  }
+}
